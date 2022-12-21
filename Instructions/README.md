@@ -1,6 +1,6 @@
 # Machine Learning Trading Bot
 
-![Decorative image.](Instructions/Images/14-challenge-image.png)
+![Decorative image.](Images/14-challenge-image.png)
 
 Now, it's time to take what you've learned about machine learning and apply it to new situations. For this optional assignment, you'll create an algorithmic trading bot that learns and adapts to new data and evolving markets. Be sure to give it your all -- as the skills you hone will become powerful tools in your FinTech tool belt.
 
@@ -28,7 +28,7 @@ As part of your GitHub repository’s `README.md` file, you will also create a r
 
 Download the following files to help you get started:
 
-[Unit 14 homework files](Instructions/Starter_Code/Starter_Code.zip)
+[Unit 14 homework files](Starter_Code/Starter_Code.zip)
 
 > **Note:** The provided CSV file contains OHLCV data for an MSCI&ndash;based emerging markets ETF that [iShares](https://www.ishares.com/us/products/268704/ishares-currency-hedged-msci-emerging-markets) issued. Investments in emerging markets make up an important aspect of a well-diversified investment portfolio. This is because the included equities have potentially higher long-term returns, even though they carry more risk.
 
