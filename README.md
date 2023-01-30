@@ -83,8 +83,9 @@ Open the Jupyter notebook. Restart the kernel, run the provided cells that corre
 
 5. Review the classification report associated with the `SVC` model predictions.
     * Classification Report![Decorative image.](images/1_5_01_Class_Report.png)
-
-
+    * The Model works well for the long indicator 1.0 with precision, recall and accuracy above 60%
+    * The Model works poorly for the short indicator -1.0 with recall and accuracy below 30% 
+    
 6. Create a predictions DataFrame that contains columns for “Predicted” values, “Actual Returns”, and “Strategy Returns”.
     * Predictions![Decorative image.](images/1_6_01_Predictions.png)
 
@@ -103,8 +104,8 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
 
     > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.   
       
+    * Jupyter Notebook: [Training Dataset Size Adjustment](code/ml_trading_bot_1_Tune_Size.ipynb)
     * Adjusting the size of the training dataset![Decorative image.](images/2_2_01_Testing_Period_2.png)
-  
     * Classification Reports - Accuracy improces as the Training Period Increases
         * 2 Months of Training Data![Decorative image.](images/2_5_01_Class_Report_2.png)
         * 3 Months of Training Data![Decorative image.](images/2_5_02_Class_Report_3.png)
@@ -120,6 +121,7 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
   
 2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
   
+    * Jupyter Notebook: [SMA Variables Adjustments](code/ml_trading_bot_2_Tune_SMA.ipynb)
     * SMA Returns are best when the long window is 100
     * SMA Returns under perform when the long window is 200
     * Robust Analysis - Put the variables in a loop and store the results in a dataframe.
@@ -141,6 +143,7 @@ In this section, you’ll use the original parameters that the starter code prov
 
 1. Import a new classifier, such as `AdaBoost`, `DecisionTreeClassifier`, or `LogisticRegression`. (For the full list of classifiers, refer to the [Supervised learning page](https://scikit-learn.org/stable/supervised_learning.html) in the scikit-learn documentation.)
 
+    * Jupyter Notebook: [Decision Tree Classifier](code/ml_trading_bot_3_Tree_Class.ipynb)
     * Decision Tree Classifier![Decorative image.](images/4_1_01_New_Classifier.png)
 
 2. Using the original training data as the baseline model, fit another model with the new classifier.
