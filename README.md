@@ -51,18 +51,47 @@ In this section, you’ll run the provided starter code to establish a baseline 
 Open the Jupyter notebook. Restart the kernel, run the provided cells that correspond with the first three steps, and then proceed to step four.
 
 1. Import the OHLCV dataset into a Pandas DataFrame.
+    * Import Libraries![Decorative image.](images/1_1_01_ml_libraries.png)
+    * OHLCV Data![Decorative image.](images/1_1_02_OHLCV_Dataset.png)
+    * OHLCV Returns Data![Decorative image.](images/1_1_03_OHLCV_Dataset.png)
+
+
 
 2. Generate trading signals using short- and long-window SMA values.
+    * Create Moving Averages![Decorative image.](images/1_2_01_Trading_Signals.png)
+    * Trading Objectives
+        * Buy/Long when SMA Fast is greater than SMA Slow
+        * Sell/Short when SMA Fast is less than SMA Slow
+        * Trade when SMA Fast crosses SMA Slow
+    * Create Signal![Decorative image.](images/1_2_02_Trading_Signals.png)
+    * Determine Entry/Exit![Decorative image.](images/1_2_03_Trading_Signals.png)
+    * Graph SMA and Entry/Exit![Decorative image.](images/1_2_04_Signals_plot.png)
+    * Zoom SMA Entry Exit![Decorative image.](images/1_2_05_Signals_plot.png)
+    * Calculate Strategy Returns![Decorative image.](images/1_2_06_Returns.png)
+    * Graph Strategy Returns![Decorative image.](images/1_2_07_Returns_plot.png)
 
 3. Split the data into training and testing datasets.
+    * Create Feature X dataset![Decorative image.](images/1_3_01_Split_Dataset.png)
+    * Determine Start and End Dates of Training Data![Decorative image.](images/1_3_02_Training_Period.png)
+    * Training Data![Decorative image.](images/1_3_03_Training_Period.png)
+    * Testing Data![Decorative image.](images/1_3_04_Testing_Period.png)
+    * Scaled  Data![Decorative image.](images/1_3_05_Scaled_Data.png)
 
 4. Use the `SVC` classifier model from SKLearn's support vector machine (SVM) learning method to fit the training data and make predictions based on the testing data. Review the predictions.
+    * SVC Model![Decorative image.](images/1_4_01_SMV_Model.png)
+
 
 5. Review the classification report associated with the `SVC` model predictions.
+    * Classification Report![Decorative image.](images/1_5_01_Class_Report.png)
+
 
 6. Create a predictions DataFrame that contains columns for “Predicted” values, “Actual Returns”, and “Strategy Returns”.
+    * Predictions![Decorative image.](images/1_6_01_Predictions.png)
+
 
 7. Create a cumulative return plot that shows the actual returns vs. the strategy returns. Save a PNG image of this plot. This will serve as a baseline against which to compare the effects of tuning the trading algorithm.
+    * Actual vs. SMA - Basline Returns![Decorative image.](images/1_7_01_Returns.png)
+
 
 8. Write your conclusions about the performance of the baseline trading algorithm in the `README.md` file that’s associated with your GitHub repository. Support your findings by using the PNG image that you saved in the previous step.
 
