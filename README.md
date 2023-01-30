@@ -111,7 +111,7 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
         * 8 Months of Training Data![Decorative image.](images/2_5_03_Class_Report_8.png)
         * 16 Months of Training Data![Decorative image.](images/2_5_04_Class_Report_16.png)
   
-    * SMA Returs ar best at 3 Months of training data
+    * SMA Returns are best at 3 Months of training data
     * Robust Analysis - Put the variables in a loop and store the results in a dataframe.
         * 2 Months - 2nd Best Returns![Decorative image.](images/2_7_01_Returns_2.png)
         * 3 Months - Best Returns![Decorative image.](images/2_7_02_Returns_3.png)
@@ -119,8 +119,21 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
         * 16 Months - Negative Returns![Decorative image.](images/2_7_04_Returns_16.png)
   
 2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
+  
+    * SMA Returns are best when the long window is 100
+    * SMA Returns under perform when the long window is 200
+    * Robust Analysis - Put the variables in a loop and store the results in a dataframe.
+        * Short = 4 and Long = 100 performs best![Decorative image.](images/3_7_01_Returns_4_100.png)
+        * Short = 50 and Long = 100![Decorative image.](images/3_7_02_Returns_50_100.png)
+        * Short = 4 and Long = 200![Decorative image.](images/3_7_03_Returns_4_200.png)
+        * Short = 50 and Long = 200![Decorative image.](images/3_7_04_Returns_50_200.png)
 
+  
 3. Choose the set of parameters that best improved the trading algorithm returns. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns, and document your conclusion in your `README.md` file.
+  
+    * Conclusion: The origional Baseline parameters performed best
+    * Training Period = 3 months 
+    * Short Window = 4 and Long Window = 100![Decorative image.](images/3_7_01_Returns_4_100.png)
 
 ### Evaluate a New Machine Learning Classifier
 
