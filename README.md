@@ -101,8 +101,23 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
 
 1. Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing the training window?
 
-    > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.
-
+    > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.   
+      
+    * Adjusting the size of the training dataset![Decorative image.](images/2_2_01_Testing_Period_2.png)
+  
+    * Classification Reports - Accuracy improces as the Training Period Increases
+        * 2 Months of Training Data![Decorative image.](images/2_5_01_Class_Report_2.png)
+        * 3 Months of Training Data![Decorative image.](images/2_5_02_Class_Report_3.png)
+        * 8 Months of Training Data![Decorative image.](images/2_5_03_Class_Report_8.png)
+        * 16 Months of Training Data![Decorative image.](images/2_5_04_Class_Report_16.png)
+  
+    * SMA Returs ar best at 3 Months of training data
+    * Robust Analysis - Put the variables in a loop and store the results in a dataframe.
+        * 2 Months - 2nd Best Returns![Decorative image.](images/2_7_01_Returns_2.png)
+        * 3 Months - Best Returns![Decorative image.](images/2_7_02_Returns_3.png)
+        * 8 Months - 3rd Best Returns![Decorative image.](images/2_7_03_Returns_8.png)
+        * 16 Months - Negative Returns![Decorative image.](images/2_7_04_Returns_16.png)
+  
 2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
 
 3. Choose the set of parameters that best improved the trading algorithm returns. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns, and document your conclusion in your `README.md` file.
