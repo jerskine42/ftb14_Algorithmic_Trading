@@ -141,10 +141,22 @@ In this section, you’ll use the original parameters that the starter code prov
 
 1. Import a new classifier, such as `AdaBoost`, `DecisionTreeClassifier`, or `LogisticRegression`. (For the full list of classifiers, refer to the [Supervised learning page](https://scikit-learn.org/stable/supervised_learning.html) in the scikit-learn documentation.)
 
+    * Decision Tree Classifier![Decorative image.](images/4_1_01_New_Classifier.png)
+
 2. Using the original training data as the baseline model, fit another model with the new classifier.
+  
+    * Train Model![Decorative image.](images/4_2_01_Train_Model.png)
 
 3. Backtest the new model to evaluate its performance. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns for this updated trading algorithm, and write your conclusions in your `README.md` file. Answer the following questions: Did this new model perform better or worse than the provided baseline model? Did this new model perform better or worse than your tuned trading algorithm?
+  
+    * Classification Report - 50% Accuracy![Decorative image.](images/4_3_01_Class_Report.png)    
+    * Predictions![Decorative image.](images/4_3_02_Predictions.png)    
+    * Model Performace Comaparison![Decorative image.](images/4_3_03_Returns.png)    
 
+CONCLUSION:
+* The Basline model performeed the best
+* The Decision Tree Classifier underperformed the Actual performance
+   
 ### Create an Evaluation Report
 
 In the previous sections, you updated your `README.md` file with your conclusions. To accomplish this section, you need to add a summary evaluation report at the end of the `README.md` file. For this report, express your final conclusions and analysis. Support your findings by using the PNG images that you created.
